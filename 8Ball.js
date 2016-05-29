@@ -1,4 +1,4 @@
-var request = require.safe('request');
+var request = require.safe('request'),
 
 insults = ['You\'re asking the impossible',
     'It would help if you ask me something',
