@@ -1,4 +1,4 @@
-var request = require.safe('request'),
+var request = require('request'),
 
 insults = ['You\'re asking the impossible',
     'It would help if you ask me something',
@@ -34,7 +34,7 @@ exports.search = function (query, callback) {
     }
 };
 
-exports.run = function(api, event) {
+exports.run = function (api, event) {
     var query = event.arguments_body;
     exports.search(query, function(result) {
 		api.sendImage("url", result, "Hmmmmmmm", event.thread_id);
